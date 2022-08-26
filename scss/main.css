@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  background-color: lightblue;
+  border: dashed 2px grey;
+}
+
+.main-index {
+  background-color: beige;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-index h1 {
+  text-align: center;
+}
+.main-index .card {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid black;
+}
+.main-index .card h3 {
+  font-family: sans-serif;
+}
+.main-index .card h3:hover {
+  color: red;
+  transition: 300ms;
+  background-color: blue;
+}
+
+@media (min-width: 550px) {
+  .main-index {
+    flex-direction: row;
+  }
+  .main-index .card h3:hover {
+    color: grey;
+    transition: 400ms;
+    background-color: rgb(19, 180, 180);
+  }
+}
+.header {
+  background-color: bisque;
+  height: 20vh;
+}
+.header ul {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.header ul li {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+footer form {
+  padding: 10px;
+  margin: 10px;
+}
+footer form input:focus {
+  background-color: green;
+}
+footer form input:focus::-moz-placeholder {
+  color: white;
+}
+footer form input:focus:-ms-input-placeholder {
+  color: white;
+}
+footer form input:focus::placeholder {
+  color: white;
+}/*# sourceMappingURL=main.css.map */

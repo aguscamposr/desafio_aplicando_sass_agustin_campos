@@ -1,0 +1,14 @@
+footer {
+    form {
+        padding: 10px;
+        margin: 10px;
+        input {
+            &:focus {
+                background-color: green;
+                &::placeholder {
+                    color: white;
+                }
+            }
+        }
+    }
+}

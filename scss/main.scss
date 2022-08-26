@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    background-color: lightblue;
+    border: dashed 2px grey;
+}
+
+@import './secciones/main-index';
+
+@import './secciones/header';
+
+@import './secciones/footer';

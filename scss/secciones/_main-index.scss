@@ -1,0 +1,41 @@
+
+.main-index {
+    background-color: beige;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+    }
+    .card {
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid black;
+        h3 {
+            font-family: sans-serif;
+            &:hover {
+                color: red;
+                transition: 300ms;
+                background-color: blue;
+            }
+        }
+    }
+}
+
+@media (min-width:550px) {
+    .main-index {
+        flex-direction: row;
+        .card {
+            h3 {
+                &:hover {
+                    color: grey;
+                    transition: 400ms;
+                    background-color: rgb(19, 180, 180);
+                }
+            }
+        }
+    }
+}
